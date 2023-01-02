@@ -29,7 +29,6 @@ To use this sketch, follow these steps:
 1. Connect the MQ-135 and MQ-2 sensor modules to the Arduino using jumper wires. The specific connections will depend on the modules and the Arduino board you are using.
 
 <p align="center">
-  <img src="doc/MQ-135-pin.jpg" height="400" />
   <img src="doc/MQ-135-wire.jpg" height="400" />
 </p>
 
