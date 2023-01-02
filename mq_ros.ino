@@ -101,10 +101,3 @@ void loop()
   nh.spinOnce();
   delay(1000);
 }
-
-// Después de esto:
-// Cerrar el IDE de Arduino
-// roscore
-// rosrun rosserial_python serial_node.py _port:=/dev/ttyUSB0 _baud:=57600 (el puerto y el baud rate pueden cambiar)
-// rostopic echo mq135_CO2
-// rostopic echo mq2_GLP
