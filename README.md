@@ -46,6 +46,8 @@ To use this sketch, follow these steps:
 (Terminal 2) rosrun rosserial_python serial_node.py _port:=/dev/ttyUSB0 _baud:=57600
 ```
 
+
+
 ### Usage
 
 Once the sketch is running on the Arduino and you have set up the ROS environment, you can start monitoring the gas concentration values. The values will be published to two ROS topics: `mq135_CO2` and `mq2_GLP`. You can use the rostopic command to view the values in real time:
