@@ -43,8 +43,9 @@ Replace <rosdistro> with the name of your ROS distribution (e.g. melodic, noetic
     - The code is implemented so that the analog input A0 of the Arduino board is connected to the analog output (AOUT) of the MQ-135 sensor, while the analog input A1 is connected to the analog output (AOUT) of the MQ-2 sensor.
     
 <p align="center">
-  <img src="Images/MQ-135-pin.jpg" width="500" />
-  <img src="Images/MQ-135-wire.jpg" width="500" />
+  <img src="Images/MQ-135-pin.jpg" width="400" />
+  <img src="Images/MQ-135-wire.jpg" width="400" />
+  <br>
   <strong>Figure 1. MQ-135 gas sensor module pins and wiring</strong>
 </p>
 
