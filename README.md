@@ -6,7 +6,7 @@ This Arduino sketch reads the gas concentration of CO2 and LPG (Liquified Petrol
 
 The sketch publishes the gas concentration values to two ROS topics: `mq135_CO2` and `mq2_GLP`.
 
-### Hardware
+### 1. Hardware
  
 The following hardware is required to run this sketch:
 
@@ -15,7 +15,7 @@ The following hardware is required to run this sketch:
 - Jumper wires to connect the sensor modules to the Arduino.
 - USB cable to connect the Arduino board to the device running ROS.
 
-### Prerequisites
+### 2. Prerequisites
 
 Before you can use this sketch, you need to install the following software:
 
@@ -31,7 +31,7 @@ sudo apt-get install ros-melodic-rosserial-arduino
 ```
 Replace <rosdistro> with the name of your ROS distribution (e.g. melodic, noetic).
 
-### Installation
+### 3. Installation
 
   To use this sketch, follow these steps:
   
@@ -63,7 +63,7 @@ Replace <rosdistro> with the name of your ROS distribution (e.g. melodic, noetic
 ```
 Replace /dev/ttyUSB0 with the correct serial port for your setup (e.g. /dev/ttyACM0) and replace 57600 with the correct baud rate (e.g. 9600, 115200).
 
-### Usage
+### 4. Usage
 
 Once the sketch is running on the Arduino and you have set up the ROS environment, you can start monitoring the gas concentration values. The values will be published to two ROS topics (`mq135_CO2` and `mq2_GLP`):
 
@@ -73,7 +73,7 @@ Once the sketch is running on the Arduino and you have set up the ROS environmen
 ```
 WIth the above commands you view the values in real time.
 
-### Troubleshooting
+### 5. Troubleshooting
 
 If you are having trouble getting the sketch to work, here are a few things to check:
 
@@ -89,7 +89,7 @@ If you are having trouble getting the sketch to work, here are a few things to c
 
 - If you are using the MQ-2 sensor, make sure it is not exposed to open flames or high temperatures, as this can damage the sensor.
 
-### References
+### 6. References
 
 Aksoy, M. Ç. (2022). _NodeMcu ROS Project_ [C++]. https://github.com/mcagriaksoy/ros_nodemcu_rosserial_sensor (Original work published 2020)
 
