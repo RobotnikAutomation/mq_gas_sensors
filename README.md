@@ -90,16 +90,16 @@ If you are having trouble getting the sketch to work, here are a few things to c
 
 ### References
 
-Aksoy, M. C. (2020). _NodeMcu ROS Project_. Retrieved from https://github.com/mcagriaksoy/ros_nodemcu_rosserial_sensor
+Aksoy, M. Ç. (2022). _NodeMcu ROS Project_ [C++]. https://github.com/mcagriaksoy/ros_nodemcu_rosserial_sensor (Original work published 2020)
 
-ANAVI Technology (2019). _How to Use MQ-135 Gas Sensor?_. Retrieved from https://blog.anavi.technology/?p=56
+Anavi, L. (2019). _How to Use MQ-135 Gas Sensor? ANAVI Technology_. https://blog.anavi.technology/?p=56
 
-Frank, J. (2022). _Rosserial Arduino Library_. Retrieved from https://github.com/frankjoshua/rosserial_arduino_lib
+Califa Urquiza, M. Á. (2023). _MQSensorsLib_ [C++]. https://github.com/miguel5612/MQSensorsLib (Original work published 2019)
 
-Gironi, D. (2017). _MQ Gas Sensor Correlation Function_. Retrieved from http://davidegironi.blogspot.com/2017/05/mq-gas-sensor-correlation-function.html
+Frank, J. (2022). _ROS Serial Arduino Library_ [C++]. https://github.com/frankjoshua/rosserial_arduino_lib (Original work published 2017)
 
-Karim, M. (2018). _Arduino Project Hub_. Retrieved from https://projecthub.arduino.cc/m_karim02/0385af2f-f3f0-47b4-b93d-07141e7472c0
+Gironi, D. (2017). Davide Gironi: MQ gas sensor correlation function estimation by datasheet. _Davide Gironi_. http://davidegironi.blogspot.com/2017/05/mq-gas-sensor-correlation-function.html
 
-Maker Pro (EETech Media, LLC) (2020). _How to Use Arduino with Robot Operating System (ROS)_. Retrieved from https://maker.pro/arduino/tutorial/how-to-use-arduino-with-robot-operating-system-ros
+Khondaker, M. K. (2018). _Arduino And MQ 135 Gas Sensor With Arduino Code_. https://projecthub.arduino.cc/m_karim02/0385af2f-f3f0-47b4-b93d-07141e7472c0
 
-Miguel, G. (2022). _MQSensorsLib_. Retrieved from https://github.com/miguel5612/MQSensorsLib
+Kumar, A. (2020). _How to use Arduino with Robot Operating System (ROS) | Arduino_. Maker Pro. https://maker.pro/arduino/tutorial/how-to-use-arduino-with-robot-operating-system-ros
