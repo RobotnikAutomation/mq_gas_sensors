@@ -29,7 +29,7 @@ To install the rosserial package, open a terminal and run the following command:
 sudo apt-get install ros-<rosdistro>-rosserial
 sudo apt-get install ros-<rosdistro>-rosserial-arduino
 ```
-Replace <rosdistro> with the name of your ROS distribution (e.g. melodic, noetic).
+Replace ```<rosdistro>``` with the name of your ROS distribution (e.g. melodic, noetic).
 
 ### 3. Installation
 
