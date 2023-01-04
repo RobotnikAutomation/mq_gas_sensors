@@ -1,5 +1,5 @@
 # Gas Concentration Monitoring with MQ-135 and MQ-2 Sensors
-This Arduino sketch reads the gas concentration of CO2 and LPG (Liquified Petroleum Gas) values from two sensors: the MQ-135 and MQ-2 and then communicates the values to ROS using the following libraries:
+This Arduino sketch reads the gas concentration of CO2 and LPG (Liquified Petroleum Gas) values from two sensors, the [MQ-135](https://github.com/RobotnikAutomation/mq_gas_sensors/blob/main/Datasheets/MQ135_datasheet.pdf) and [MQ-2](https://github.com/RobotnikAutomation/mq_gas_sensors/blob/main/Datasheets/MQ2_datasheet.pdf), and then communicates the values to ROS using the following libraries:
 
 - [MQUnifiedsensor by Miguel Califa](https://github.com/miguel5612/MQSensorsLib) to interface with the MQ-135 and MQ-2 sensors.
 - [Rosserial Arduino Library by Michael Ferguson](https://github.com/frankjoshua/rosserial_arduino_lib) to communicate the values to ROS.
@@ -21,13 +21,13 @@ Before you can use this sketch, you need to install the following software:
 
 - [Arduino IDE](https://www.arduino.cc/en/Main/Software) to upload the sketch to the Arduino board.
 - [ROS](http://wiki.ros.org/Installation) to receive the gas concentration values.
-- [rosserial](http://wiki.ros.org/rosserial) package to establish a connection between ROS and the Arduino.
+- [rosserial](http://wiki.ros.org/rosserial) ROS package to establish a connection between ROS and the Arduino.
 
 To install the rosserial package, open a terminal and run the following command:
 
 ```
-sudo apt-get install ros-melodic-rosserial
-sudo apt-get install ros-melodic-rosserial-arduino
+sudo apt-get install ros-<rosdistro>-rosserial
+sudo apt-get install ros-<rosdistro>-rosserial-arduino
 ```
 Replace <rosdistro> with the name of your ROS distribution (e.g. melodic, noetic).
 
@@ -49,7 +49,7 @@ Replace <rosdistro> with the name of your ROS distribution (e.g. melodic, noetic
   <strong>Figure 1. MQ-135 gas sensor module pins and wiring</strong>
 </p>
 
-2. Connect the Arduino board to the device running ROS using a USB cable.
+2. Connect the Arduino board to the device running ROS using a USB cable type A/B.
 
 3. Download and install the required libraries: MQUnifiedsensor and Rosserial Arduino Library. You can download them directly in the Arduino IDE.
 
@@ -65,13 +65,13 @@ Replace /dev/ttyUSB0 with the correct serial port for your setup (e.g. /dev/ttyA
 
 ### 4. Usage
 
-Once the sketch is running on the Arduino and you have set up the ROS environment, you can start monitoring the gas concentration values. The values will be published to two ROS topics (`mq135_CO2` and `mq2_GLP`):
+Once the sketch is running on the Arduino and you have set up the ROS environment, you can start monitoring the gas concentration values. The values will be published to two ROS topics: `mq135_CO2` and `mq2_GLP`. With the following commands you can view the values in real time:
 
 ```
 (Terminal 3) rostopic echo mq135_CO2
 (Terminal 4) rostopic echo mq2_GLP
 ```
-WIth the above commands you view the values in real time.
+Note that each sensor has the ability to detect multiple gases, so when there is a mixture of gases present, the readings represent the sum of the concentrations of all the gases, and it is not possible to determine the specific concentration of each individual gas.
 
 ### 5. Troubleshooting
 
