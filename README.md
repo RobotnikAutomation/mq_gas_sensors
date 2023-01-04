@@ -73,6 +73,41 @@ Once the sketch is running on the Arduino and you have set up the ROS environmen
 ```
 Note that each sensor has the ability to detect multiple gases, so when there is a mixture of gases present, the readings represent the sum of the concentrations of all the gases, and it is not possible to determine the specific concentration of each individual gas.
 
+In this sense, the values of the exponential regression equation (```PPM =  a*ratio^b```, where ```ratio``` is the R0/RS ratio in clean air) can be modified according to the gas to be measured:
+
+<p align="center">
+  <strong>Table 1. MQ-135 exponential regression coefficients</strong>
+</p>
+
+<div align="center">
+
+| Gas    | a      | b      |
+| :---:  | :---:  | :---:  |
+| CO     | 605.18 | -3.937 | 
+| Alcohol| 77.255 | -3.18  |
+| CO2    | 110.47 | -2.862 |
+| Toluen | 44.947 | -3.445 |
+| NH4    | 102.2  | -2.473 |
+| Aceton | 34.668 | -3.369 |
+
+</div>
+
+<p align="center">
+  <strong>Table 2. MQ-2 exponential regression coefficients</strong>
+</p>
+
+<div align="center">
+
+| Gas | a | b |
+| :---:     | :---:   | :---:   |
+| H2        | 987.99  | -2.162  |
+| LPG       | 574.25  | -2.222  |
+| CO        | 36974   | -3.109  |
+| Alcohol   | 3616.1  | -2.675  |
+| Propane   | 658.71  | -2.168  |
+
+</div>
+
 ### 5. Troubleshooting
 
 If you are having trouble getting the sketch to work, here are a few things to check:
